@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Blog</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fff4df, #ffe4b5, #ffd38c, #ffc067);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #d9a86c;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            transition: 0.3s;
+        }
+
+        .container:hover {
+            box-shadow: 0px 0px 20px #ffb85c;
+        }
+
+        h1 {
+            text-align: center;
+            color: #8a5a0f;
+            background-color: #ffedcf;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #7b4d0c;
+            background-color: #ffe8c2;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #8a5a0f;
+        }
+
+        .details {
+            border: 1px solid #caa06a;
+            background-color: #fff6e6;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            border: 1px solid #b8864a;
+            background-color: #faf6ef;
+            padding: 15px;
+            margin: 15px 0;
+            overflow: auto;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            background-color: #ffeacf;
+            border-color: #ffb55a;
+        }
+
+        .btn {
+            background-color: #8a5a0f;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #5c3a07;
+            transform: scale(1.05);
+        }
+
+        /* 200x200 left side images */
+        .img-fixed {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #aa7b34;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .img-fixed:hover {
+            transform: scale(1.08);
+            border-color: #ff9e2f;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Recipe Blog</h1>
+
+    <div class="details">
+        <p><b>Name:</b> Pragati Sagar</p>
+        <p><b>Branch:</b> B.Tech CSIT (1st Year)</p>
+        <p><b>Email:</b> pragati.25005145@kiet.edu</p>
+    </div>
+
+    <!-- Search -->
+    <h2>Search Recipes</h2>
+    <div class="box">
+        <input type="text" placeholder="Search any recipe..." style="width: 90%; padding: 6px;">
+        <br><br>
+        <button class="btn">Search</button>
+    </div>
+
+    <!-- Popular Recipes -->
+    <h2>Popular Recipes</h2>
+
+    <div class="box">
+        <img src="https://thecurrymommy.com/wp-content/uploads/2021/09/butter-paneer-masala-one-pot.jpg" class="img-fixed" alt="Paneer Dish">
+        <h3>Paneer Butter Masala</h3>
+        <p><b>Ingredients:</b> Paneer, Tomato, Cream, Butter, Spices</p>
+        <p><b>Instructions:</b> Cook tomatoes → blend → add butter & cream → add paneer.</p>
+        <p><b>Rating:</b> ⭐⭐⭐⭐☆</p>
+    </div>
+
+    <div class="box">
+        <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" class="img-fixed" alt="Biryani">
+        <h3>Veg Biryani</h3>
+        <p><b>Ingredients:</b> Rice, Vegetables, Spices</p>
+        <p><b>Instructions:</b> Fry vegetables → add spices → layer with rice → steam cook.</p>
+        <p><b>Rating:</b> ⭐⭐⭐⭐⭐</p>
+    </div>
+
+    <div class="box">
+        <img src="https://flouringkitchen.com/wp-content/uploads/2023/07/BW1A4089-2.jpg" class="img-fixed" alt="Cake">
+        <h3>Chocolate Cake</h3>
+        <p><b>Ingredients:</b> Flour, Cocoa, Butter, Eggs, Sugar</p>
+        <p><b>Instructions:</b> Mix → bake → decorate → serve.</p>
+        <p><b>Rating:</b> ⭐⭐⭐⭐☆</p>
+    </div>
+
+    <!-- User Submitted Recipe -->
+    <h2>Submit Your Recipe</h2>
+
+    <div class="box">
+        <input type="text" placeholder="Recipe Name" style="width: 90%; padding: 6px; margin-bottom: 10px;">
+        <textarea rows="3" placeholder="Ingredients" style="width: 90%; padding: 6px; margin-bottom: 10px;"></textarea>
+        <textarea rows="4" placeholder="Instructions" style="width: 90%; padding: 6px; margin-bottom: 10px;"></textarea>
+        <input type="number" min="1" max="5" placeholder="Rating (1-5)" style="width: 90%; padding: 6px;">
+        <br><br>
+        <button class="btn">Submit Recipe</button>
+    </div>
+
+</div>
+
+</body>
+</html>
